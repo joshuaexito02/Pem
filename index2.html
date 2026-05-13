@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemol's Epic Pics</title>
+
+    <style>
+        body{
+            background-image: url("pemol.jpeg");
+            background-size: cover;
+            color: white;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* IMAGE BOX */
+        .image-box{
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 25px;
+        }
+
+        /* IMAGE */
+        .image-box img{
+         width: 100%;
+         height: 100%;
+         border-radius: 25px;
+         transition: 0.4s ease;
+        }
+        
+        /* TEXT */
+        .image-text{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+
+    background: rgba(0,0,0,0.5);
+    padding: 8px 12px;
+    border-radius: 10px;
+
+    opacity: 0;
+    transition: 0.4s ease;
+}
+        /* HOVER EFFECT */
+        .image-box:hover img{
+        filter: blur(4px) brightness(60%);
+        transform: scale(1.05);
+        }
+
+        .image-box:hover .image-text{
+        opacity: 1;
+        }
+
+        h1{
+            text-align: center;
+            color: whitesmoke;
+            border: 4px solid white; 
+            width: 250px; 
+            margin: auto; 
+            padding: 10px;
+            border-radius: 25px;
+            background-color: purple
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pemol Epic Pics</h1>
+    <div class="container">
+        <div class="image-box">
+            <img src="0cdbeab0-6f37-4051-a7f2-9028ca3fabf3.jpeg" alt="Left Image">
+            <div class="image-text">bagay pa simo may cap mol</div>
+        </div>
+        <div class="image-box">
+            <img src="b02005c0-c0e7-4aaa-9d2f-d49a6f47069d.jpeg" alt="Center Image">
+            <div class="image-text">jacket2 pa gin-ot man gyapon</div>
+        </div>
+        <div class="image-box">
+            <img src="d594faf9-7fd3-434c-bac0-2143ffa83a81.jpeg" alt="Right Image">
+            <div class="image-text">daw avatar nadi skin tone mo oh</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <img src="a747b138-5240-4129-8ab2-795557fd85c5.jpeg" alt="Left Image">
+            <div class="image-text">ma kaon nalang gid ma pa turong pa</div>
+        </div>
+        <div class="image-box">
+            <img src="kupal.jpeg" alt="Center Image">
+            <div class="image-text">sang nakita ko ex ko nga may upod iban</div>
+        </div>
+        <div class="image-box">
+            <img src="ido.jpeg" alt="Right Image">
+            <div class="image-text">ga tulog ga lakat? nunaya</div>
+        </div>
+    </div>
+
+</body>
+</html>
